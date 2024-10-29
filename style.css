@@ -34,7 +34,8 @@ body{
         width: 12px;
         height: 50px;
         background-color: black;
-        animation: fadeOut linear infinite 1.5s;
+        animation: fades linear infinite 1.5s;
+        
     }
 }
 
@@ -44,5 +45,30 @@ body{
     }
     to{
         opacity: 0;
+    }
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fades {
+    0%{
+        opacity: 0;
+    }
+    33%{
+        opacity: 0.3;
+    }
+    66%{
+        opacity: 0.6;
+    }
+    99%{
+        opacity: 0.9;
     }
 }
